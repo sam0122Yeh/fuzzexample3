@@ -18,7 +18,7 @@ jobs:
         # Override this with the sanitizers you want.
         # - undefined
         # - memory
-    step:
+    steps:
     - name: Build Fuzzers (${{ matrix.sanitizer }})
       id: build
       uses: google/clusterfuzzlite/actions/build_fuzzers@v1
